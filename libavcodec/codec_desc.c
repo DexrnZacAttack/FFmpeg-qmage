@@ -1977,6 +1977,13 @@ static const AVCodecDescriptor codec_descriptors[] = {
         .long_name = NULL_IF_CONFIG_SMALL("RealVideo 6.0"),
         .props     = AV_CODEC_PROP_LOSSY | AV_CODEC_PROP_REORDER,
     },
+    {
+        .id        = AV_CODEC_ID_QMAGE,
+        .type      = AVMEDIA_TYPE_VIDEO,
+        .name      = "qmage",
+        .long_name = NULL_IF_CONFIG_SMALL("Quram Qmage"),
+        .props     = AV_CODEC_PROP_LOSSLESS,
+    },
 
     /* various PCM "codecs" */
     {

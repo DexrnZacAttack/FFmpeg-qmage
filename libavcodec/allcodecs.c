@@ -271,6 +271,7 @@ extern const FFCodec ff_prosumer_decoder;
 extern const FFCodec ff_psd_decoder;
 extern const FFCodec ff_ptx_decoder;
 extern const FFCodec ff_qdraw_decoder;
+extern const FFCodec ff_qmage_decoder;
 extern const FFCodec ff_qoi_encoder;
 extern const FFCodec ff_qoi_decoder;
 extern const FFCodec ff_qpeg_decoder;
