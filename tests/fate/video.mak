@@ -397,6 +397,17 @@ fate-rv60-72x72: CMD = framecrc -i $(TARGET_SAMPLES)/rv60/test72x72.rmhd -an
 
 fate-rv60: fate-rv60-72x72 fate-rv60-512x512
 
+FATE_VIDEO-$(call FRAMECRC, QMAGE, QMAGE) += fate-qmage-ani_alpha
+fate-qmage-ani_alpha: CMD = framecrc -i $(TARGET_SAMPLES)/qmage/ani_alpha.qmg
+
+FATE_VIDEO-$(call FRAMECRC, QMAGE, QMAGE) += fate-qmage-dynamic_table
+fate-qmage-dynamic_table: CMD = framecrc -i $(TARGET_SAMPLES)/qmage/dynamic_table.qmg
+
+FATE_VIDEO-$(call FRAMECRC, QMAGE, QMAGE) += fate-qmage-w2_pass
+fate-qmage-w2_pass: CMD = framecrc -i $(TARGET_SAMPLES)/qmage/w2_pass.qmg
+
+fate-qmage: fate-qmage-ani_alpha fate-qmage-dynamic_table fate-qmage-w2_pass
+
 FATE_VIDEO += $(FATE_VIDEO-yes)
 
 FATE_SAMPLES_FFMPEG += $(FATE_VIDEO)
