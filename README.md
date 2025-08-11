@@ -1,6 +1,22 @@
 FFmpeg README
 =============
 
+> [!IMPORTANT]
+> This fork was made to add the patches for the Quram Qmage codec seen in Samsung devices
+>
+> It's based off of commit [`3528bfed450842a991df6e076fe72d4c2eee6432`](https://github.com/FFmpeg/FFmpeg/commit/3528bfed450842a991df6e076fe72d4c2eee6432) with the following patches applied:
+>
+> - [`[FFmpeg-devel] [PATCH 0/3] Quram Qmage image decoder`](https://ffmpeg.org/pipermail/ffmpeg-devel/2024-November/336378.html)
+> - [`[FFmpeg-devel] [PATCH 1/3] avcodec/qmagedec: Quram Qmage decoder`](https://ffmpeg.org/pipermail/ffmpeg-devel/2024-November/336379.html)
+> - [`[FFmpeg-devel] [PATCH 2/3] avformat/qmagedec: Quram Qmage demuxer`](https://ffmpeg.org/pipermail/ffmpeg-devel/2024-November/336380.html)
+> - [`[FFmpeg-devel] [PATCH 3/3] fate/qmage: add tests`](https://ffmpeg.org/pipermail/ffmpeg-devel/2024-November/336381.html)
+>
+> I do not own nor do I take responsibility for the above commits.
+> 
+> If you are an FFmpeg maintainer or the original author of these commits, you may contact me at `dexrn` on Discord.
+> 
+> If needed, I can also be reached at `dexrn@hotmail.com`, however I do not check my emails often.
+
 FFmpeg is a collection of libraries and tools to process multimedia content
 such as audio, video, subtitles and related metadata.
 
